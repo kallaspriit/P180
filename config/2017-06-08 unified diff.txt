@@ -23,7 +23,6 @@ aux 3 2 1 1200 1800
 aux 4 13 3 1200 2100
 rxfail 4 s 2000
 rxfail 5 s 1000
-rxfail 7 s 2000
 set rssi_channel = 9
 set fpv_mix_degrees = 35
 set debug_mode = NOTCH
