@@ -1,0 +1,53 @@
+# diff
+# Betaflight / LUXV2_RACE 3.1.7 Apr  3 2017 / 22:09:37 (e1c4b5c)
+name P180
+
+# Either DSHOT300 or ONESHOT42
+# set motor_pwm_protocol = DSHOT300
+
+feature MOTOR_STOP
+feature LED_STRIP
+serial 0 2048 115200 57600 0 115200
+serial 1 0 115200 57600 0 115200
+serial 3 64 115200 57600 0 115200
+serial 4 32 115200 57600 0 115200
+led 0 0,0::AW:0
+led 1 1,0::AW:0
+led 2 2,0::AW:0
+led 3 3,0::AW:0
+mode_color 6 1 2
+aux 0 0 2 1800 2100
+aux 1 28 0 1800 2100
+aux 2 1 1 900 1200
+aux 3 2 1 1200 1800
+aux 4 13 3 1200 2100
+rxfail 4 s 2000
+rxfail 5 s 1000
+rxfail 7 s 2000
+set rssi_channel = 9
+set fpv_mix_degrees = 35
+set debug_mode = NOTCH
+set digital_idle_percent =  3.000
+set disarm_kill_switch = OFF
+set align_board_roll = 180
+set gyro_notch1_hz = 320
+set gyro_notch1_cut = 280
+set gyro_notch2_cut = 140
+set failsafe_delay = 5
+set pid_process_denom = 1
+set blackbox_rate_denom = 4
+profile 0
+
+set yaw_lowpass = 70
+set p_pitch = 55
+set d_pitch = 32
+set p_roll = 55
+set d_roll = 32
+set p_yaw = 20
+set d_yaw = 0
+rateprofile 0
+rateprofile 0
+
+set roll_srate = 80
+set pitch_srate = 80
+set yaw_srate = 80
