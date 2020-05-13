@@ -1,0 +1,42 @@
+batch start
+defaults nosave
+mcu_id 002e00175833570b20343331
+
+feature -AIRMODE
+feature MOTOR_STOP
+feature LED_STRIP
+beeper -ARMED
+serial 0 2048 115200 57600 0 115200
+serial 1 0 115200 57600 0 115200
+serial 3 64 115200 57600 0 115200
+serial 4 32 115200 57600 0 115200
+aux 0 0 2 1300 2100 0 0
+aux 1 2 1 900 1200 0 0
+aux 2 13 3 1200 2100 0 0
+aux 3 28 0 1300 2100 0 0
+aux 4 35 5 1300 2100 0 0
+set acc_calibration = 43,-137,250
+set motor_pwm_protocol = DSHOT600
+set align_board_roll = 180
+set small_angle = 180
+profile 0
+
+profile 1
+
+profile 2
+
+profile 0
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+rateprofile 0
+save
